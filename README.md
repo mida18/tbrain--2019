@@ -1,5 +1,5 @@
 # [tbrain-2019 國泰大數據競賽](https://tbrain.trendmicro.com.tw/Competitions/Details/7)
-> Public Leaderboard:  10 / 244 (score: 0.850655)
+> Public Leaderboard:  10 / 244 (score: 0.850655)  
 > Private Leaderboard: 26 / 244 (score: 0.845608)
 
 
@@ -24,19 +24,19 @@
 ## Data cleaning
 > Categorical columns
 >> ordinary features
->>> *Replace accordingly with integers from small to large.
->>> *The part of the empty value is filled with "zero value" because it cannot bring comparable information.
+>>> * Replace accordingly with integers from small to large.
+>>> * The part of the empty value is filled with "zero value" because it cannot bring comparable information.
 >> logical features
->>> *Replace the binary feature with the content of Y/N with the value 1/0.
->>> *Since the value "0" here already has a representative message, we use the value "2" to fill in the blank value.
+>>> * Replace the binary feature with the content of Y/N with the value 1/0.
+>>> * Since the value "0" here already has a representative message, we use the value "2" to fill in the blank value.
 >> nominal features
->>> *Use dummy variables for conversion (empty values are also classified as a category).
+>>> * Use dummy variables for conversion (empty values are also classified as a category).
 
 > Numerical columns
 >> Outliers
->>> *Use [Q1−1.5*IQR, Q3+1.5*IQR] as the boundary of the normal range to check and filter outliers.
+>>> * Use [Q1−1.5*IQR, Q3+1.5*IQR] as the boundary of the normal range to check and filter outliers.
 >> NaN
->>> *After trying various filling methods such as "average", "median", "mode" and "KNN prediction", based on the performance applied to the model, the "average" filling method was finally adopted.
+>>> * After trying various filling methods such as "average", "median", "mode" and "KNN prediction", based on the performance applied to the model, the "average" filling method was finally adopted.
 
 
 ## Model training (LightGBM)
