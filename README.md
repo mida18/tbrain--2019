@@ -1,42 +1,42 @@
 # [tbrain-2019 國泰大數據競賽](https://tbrain.trendmicro.com.tw/Competitions/Details/7)
-> Public Leaderboard:  10 / 244 (score: 0.850655)  
-> Private Leaderboard: 26 / 244 (score: 0.845608)
+#### Public Leaderboard:  10 / 244 (score: 0.850655)  
+#### Private Leaderboard: 26 / 244 (score: 0.845608)
 
 
 ## Task
-> Supervised learning for binary classification
+#### Supervised learning for binary classification
 
 
 ## Data description
 #### We remove the "customer number field" and "target variable field" from the original data, and slightly classify the remaining fields according to their value types to facilitate subsequent data processing.
 
-> Train：# 100,000 ( Y：# 2,000 / N：# 98,000)
+> Train：# 100,000 ( Y：# 2,000 / N：# 98,000)  
 > Test ：# 150,000
->>       Column type       |             Example              | Number of fields
->> ------------------------|:--------------------------------:|:----------------:
->>  categorical (ordinal)  | {Low, medium, medium high, high} |        #  6
->>  categorical (logical)  | {Y, N}                           |        # 79
->>  categorical (nominal)  | {Male, Female}                   |        #  4
->>  numerical (continuous) | {0.125, 0.375, 0}                |        # 21
->>  numerical (discrete)   | {0, 1, 2, 3}                     |        # 20
+>>       Column type       |             Example              | Number of fields  
+>> ------------------------|:--------------------------------:|:----------------:  
+>>  categorical (ordinal)  | {Low, medium, medium high, high} |        #  6  
+>>  categorical (logical)  | {Y, N}                           |        # 79  
+>>  categorical (nominal)  | {Male, Female}                   |        #  4  
+>>  numerical (continuous) | {0.125, 0.375, 0}                |        # 21  
+>>  numerical (discrete)   | {0, 1, 2, 3}                     |        # 20  
 
 
 ## Data cleaning
 > Categorical columns
->> ordinary features
->>> * Replace accordingly with integers from small to large.
->>> * The part of the empty value is filled with "zero value" because it cannot bring comparable information.
->> logical features
->>> * Replace the binary feature with the content of Y/N with the value 1/0.
->>> * Since the value "0" here already has a representative message, we use the value "2" to fill in the blank value.
->> nominal features
->>> * Use dummy variables for conversion (empty values are also classified as a category).
+>> ordinary features  
+>>> * Replace accordingly with integers from small to large.  
+>>> * The part of the empty value is filled with "zero value" because it cannot bring comparable information.  
+>> logical features  
+>>> * Replace the binary feature with the content of Y/N with the value 1/0.  
+>>> * Since the value "0" here already has a representative message, we use the value "2" to fill in the blank value.  
+>> nominal features  
+>>> * Use dummy variables for conversion (empty values are also classified as a category).  
 
-> Numerical columns
->> Outliers
->>> * Use [Q1−1.5*IQR, Q3+1.5*IQR] as the boundary of the normal range to check and filter outliers.
->> NaN
->>> * After trying various filling methods such as "average", "median", "mode" and "KNN prediction", based on the performance applied to the model, the "average" filling method was finally adopted.
+> Numerical columns  
+>> Outliers  
+>>> * Use [Q1−1.5*IQR, Q3+1.5*IQR] as the boundary of the normal range to check and filter outliers.  
+>> NaN  
+>>> * After trying various filling methods such as "average", "median", "mode" and "KNN prediction", based on the performance applied to the model, the "average" filling method was finally adopted.  
 
 
 ## Model training (LightGBM)
