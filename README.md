@@ -1,6 +1,5 @@
 # [tbrain-2019 國泰大數據競賽](https://tbrain.trendmicro.com.tw/Competitions/Details/7)
-#### Public Leaderboard:  10 / 244 (score: 0.850655)
-#### Private Leaderboard: 26 / 244 (score: 0.845608)<br>
+#### Public Leaderboard:  10 / 244 (score: 0.850655)<br>Private Leaderboard: 26 / 244 (score: 0.845608)<br>
 
 ## Task
 #### Supervised learning for binary classification<br>
@@ -8,8 +7,7 @@
 ## Data description
 #### We remove the "customer number field" and "target variable field" from the original data, and slightly classify the remaining fields according to their value types to facilitate subsequent data processing.
 
-#### Train：# 100,000 ( Y：# 2,000 / N：# 98,000)
-#### Test ：# 150,000<br>
+#### Train：# 100,000 ( Y：# 2,000 / N：# 98,000)<br>Test ：# 150,000<br>
 
 |      Column type       |             Example              | Number of fields |
 |:----------------------:|:--------------------------------:|:----------------:|
