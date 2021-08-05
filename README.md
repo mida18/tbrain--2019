@@ -1,8 +1,8 @@
-# [tbrain-2019 國泰大數據競賽](https://tbrain.trendmicro.com.tw/Competitions/Details/7)
-#### Public Leaderboard:  10 / 244 (score: 0.850655)<br>Private Leaderboard: 26 / 244 (score: 0.845608)<br>
+## [tbrain-2019 國泰大數據競賽](https://tbrain.trendmicro.com.tw/Competitions/Details/7)
+### Public Leaderboard:  10 / 244 (score: 0.850655)<br>Private Leaderboard: 26 / 244 (score: 0.845608)<br><br>
 
 ## Task
-#### Supervised learning for binary classification<br>
+#### Supervised learning for binary classification<br><br>
 
 ## Data description
 #### We remove the "customer number field" and "target variable field" from the original data, and slightly classify the remaining fields according to their value types to facilitate subsequent data processing.
@@ -55,7 +55,7 @@
 > After completing the 10-fold training, we will get a total of 10 prediction models. We select the 4 models that perform best on the training set, and average their predicted values as the final submitted predicted values.  
 <br>
 
-#### The highest prediction accuracy of the LightGBM model is about 0.85  
+### The highest prediction accuracy of the LightGBM model is about 0.85  
 
 ![avatar](C:\Users\doggy\Desktop\履歷範本\tbrain-LightGBM.png)
 
