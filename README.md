@@ -1,5 +1,5 @@
 ## [tbrain-2019 國泰大數據競賽](https://tbrain.trendmicro.com.tw/Competitions/Details/7)
-### Public Leaderboard：　10 / 244 (score: 0.850655)<br>Private Leaderboard：　26 / 244 (score: 0.845608)<br><br>
+#### Public Leaderboard：　10 / 244 (score: 0.850655)<br>Private Leaderboard：　26 / 244 (score: 0.845608)<br><br>
 
 ## Task
 #### Supervised learning for binary classification<br><br>
