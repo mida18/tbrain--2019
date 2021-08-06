@@ -54,8 +54,8 @@
 > <br>
 > After completing the 10-fold training, we will get a total of 10 prediction models. We select the 4 models that perform best on the training set, and average their predicted values as the final submitted predicted values.  
 <br>
-
+#### The highest prediction accuracy of the LightGBM model is about 0.85  
+<br>
 ![image](https://github.com/mida18/tbrain--2019/blob/main/Fig/tbrain-LightGBM.png)
 
-### The highest prediction accuracy of the LightGBM model is about 0.85  
-<br>
+
