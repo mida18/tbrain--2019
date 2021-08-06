@@ -42,7 +42,7 @@
 ## Model training (LightGBM)
 #### The overall training process can be divided into two parts as shown in the figure.
 #### Part 1: Find the best hyperparameter  
-> We randomly sample 80% of the processed training data and perform 2-fold cross-segmentation (using stratified sampling to ensure that the proportions of various samples in the training set and validation set are the same as the original data set), and then use "Bayesian Optimization" and "GridSearchCV" to search for the best hyperparameter combination.  
+> We randomly sample 80% of the processed training data and perform 2-fold segmentation (using stratified sampling to ensure that the proportions of various samples in the training set and validation set are the same as the original data set), and then use "Bayesian Optimization" and "GridSearchCV" to search for the best hyperparameter combination.  
 > <br>
 > More specifically, we first use "Bayesian Optimization" to perform a wide range of hyperparameter search (it builds a probability model of the objective function, and each hyperparameter selection is based on the previous evaluation, so it will be faster and more effective than Grid Search).  
 > <br>
@@ -50,7 +50,7 @@
 <br>
 
 #### Part 2: Model training and prediction  
-> Finally, we perform 10-fold cross-segmentation for all the training data, each time 1 fold is taken as the verification set, and the remaining 9 folds are used as the training set.  
+> Finally, we perform 10-fold cross-validation for all the training data, each time 1 fold is taken as the verification set, and the remaining 9 folds are used as the training set.  
 > <br>
 > After completing the 10-fold training, we will get a total of 10 prediction models. We select the 4 models that perform best on the training set, and average their predicted values as the final submitted predicted values.  
 <br>
