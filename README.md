@@ -1,5 +1,5 @@
 ## [tbrain-2019 國泰大數據競賽](https://tbrain.trendmicro.com.tw/Competitions/Details/7)
-### Public Leaderboard:  10 / 244 (score: 0.850655)<br>Private Leaderboard: 26 / 244 (score: 0.845608)<br><br>
+### Public Leaderboard：　10 / 244 (score: 0.850655)<br>Private Leaderboard：　26 / 244 (score: 0.845608)<br><br>
 
 ## Task
 #### Supervised learning for binary classification<br><br>
@@ -56,6 +56,6 @@
 <br>
 
 ### The highest prediction accuracy of the LightGBM model is about 0.85  
-
-![avatar](C:\Users\doggy\Desktop\履歷範本\tbrain-LightGBM.png)
+<br>
+![image](https://github.com/mida18/tbrain--2019/blob/main/Fig/tbrain-LightGBM.png)
 
