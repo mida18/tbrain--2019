@@ -57,4 +57,4 @@
 
 ![image](https://github.com/mida18/tbrain--2019/blob/main/Fig/tbrain-LightGBM.png)
 
-#### The highest prediction accuracy of the LightGBM model is about 0.85  
+#### The highest prediction accuracy of the LightGBM model is about 85%  
